@@ -1,0 +1,24 @@
+.navbar{
+    background-color: #082449 !important;
+}
+.navbar a{
+    color: rgb(196, 196, 196) !important;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: white !important;
+}
+.navbar .container .fa,.navbar .container .fas{
+    color: rgb(196, 196, 196) !important;
+}
+.navbar .container .fa:hover,.navbar .container .fas:hover{
+    color: white !important;
+}
+.brand{
+    max-width: 60px;
+}
+@media screen and (max-width:767px){
+    .brand{
+        max-width: 55px;
+    }
+}

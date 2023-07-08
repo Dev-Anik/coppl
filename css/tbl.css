@@ -1,0 +1,33 @@
+th,td{
+    white-space: nowrap;
+}
+th:nth-child(1){
+    color: white;
+    background: #51bd9a;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+tbody tr:nth-child(1){
+    background: #163b5b;
+    color: white;
+    font-weight: bold;
+}
+tbody tr{
+    font-weight: 500;
+}
+tbody tr:nth-child(even){
+    background: #d2eaff8a;
+}
+.tbl-container{
+    height: 400px;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width:767px){
+    .tbl-container{
+        height: 300px;
+        overflow-y: scroll;
+    }
+}
