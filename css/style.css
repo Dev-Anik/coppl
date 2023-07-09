@@ -14,16 +14,20 @@
     transition: opacity 0.75s, visibility 0.75s;
     z-index: 1111;
 }
+.loader img{
+    width: 70px;
+}
 .loader-hidden{
     opacity: 0;
     visibility: hidden;
 }
 .loader::after{
-    content:"";
-    width: 100px;
-    height: 100px;
+    content: "";
+    width: 150px;
+    height: 150px;
+    position: absolute;
     border: 15px solid #dddddddd;
-    border-top-color: #7449f5;
+    border-top-color: #00439c;
     border-radius: 50%;
     animation: loading 0.95s ease infinite;
 }
