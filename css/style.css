@@ -35,4 +35,12 @@ video{
     .brand{
         max-width: 55px;
     }
+    video{
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width:767px){
+    video{
+        margin-top: 3%;
+    }
 }
