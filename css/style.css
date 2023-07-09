@@ -97,7 +97,7 @@ width: 100%;
     .brand{
         max-width: 55px;
     }
-    video{
+    #myVideo{
         margin-top: 2%;
     }
     .heading{
@@ -122,6 +122,6 @@ width: 100%;
     }
     .content{
         padding: .5% 0;
-        margin-bottom: 2.5%;
+        margin-bottom: 4%;
     }
 }
