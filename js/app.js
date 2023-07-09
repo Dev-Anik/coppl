@@ -1,3 +1,60 @@
+function playerData(e){
+  if(e==1 || e==2 || e==3 || e==4 || e==5 || e==6 || e==7 || e==8 || e==9 || e==10 || e==11){
+    if(e==1){
+      sessionStorage.setItem("sheetTab", "Anik Ahmed");
+window.open("../player-details.html");
+    }
+    else if(e==2){
+      sessionStorage.setItem("sheetTab", "Tonoy");
+window.open("../player-details.html");
+    }
+    else if(e==3){
+      sessionStorage.setItem("sheetTab", "Ariyan");
+window.open("../player-details.html");
+    }
+    else if(e==4){
+      sessionStorage.setItem("sheetTab", "Arafat");
+window.open("../player-details.html");
+    }
+    else if(e==5){
+      sessionStorage.setItem("sheetTab", "Ashraf");
+window.open("../player-details.html");
+    }
+    else if(e==6){
+      sessionStorage.setItem("sheetTab", "Mehedi");
+window.open("../player-details.html");
+    }
+    else if(e==7){
+      sessionStorage.setItem("sheetTab", "Munna");
+window.open("../player-details.html");
+    }
+    else if(e==8){
+      sessionStorage.setItem("sheetTab", "M. Anik");
+window.open("../player-details.html");
+    }
+    else if(e==9){
+      sessionStorage.setItem("sheetTab", "Sammo");
+window.open("../player-details.html");
+    }
+    else if(e==10){
+      sessionStorage.setItem("sheetTab", "Tanveer");
+window.open("../player-details.html");
+    }
+    else if(e==11){
+      sessionStorage.setItem("sheetTab", "Tayeb");
+window.open("../player-details.html");
+    }
+  }
+  else{
+    location.reload();
+  }
+}
+
+
+
+
+
+
 {
     {
       // Your API KEY
@@ -40,7 +97,7 @@ document.getElementById("table-body").innerHTML = tableBody;
       function loadData() {
         // Spreadsheet ID
         const spreadsheetId = "1srNGi30VyczfQeBxJC_L5qF1WVENu104f-063eJL9Xo";
-        const sheetName = "Ashraf"; // Replace with the actual sheet tab name
+        const sheetName = sessionStorage.getItem("sheetTab"); // Replace with the actual sheet tab name
         const range = `${sheetName}!A:Z`;
         getPublicValues({ spreadsheetId, range }, displayResult2);
       }
