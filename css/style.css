@@ -6,6 +6,14 @@
     color: #575757;
     font-family: 'Belanosima', sans-serif;
 }
+
+.content{
+    padding: .5% 0;
+    margin-bottom: 4%;
+}
+.un-content{
+    background: aliceblue;
+}
 .navbar-brand{
     font-family: 'Caprasimo', cursive;
     text-transform: uppercase;
@@ -14,9 +22,12 @@
 .hero{
     margin-top: -4rem;
 }
-video{
+#myVideo{
     width: 100%;
     margin-top: -10%;
+}
+#un-vid{
+width: 100%;
 }
 .navbar{
     background-color: #082449 !important;
@@ -108,5 +119,9 @@ video{
 @media screen and (max-width:575px){
     video{
         margin-top: 3%;
+    }
+    .content{
+        padding: .5% 0;
+        margin-bottom: 2.5%;
     }
 }
