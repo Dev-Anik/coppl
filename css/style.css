@@ -8,7 +8,7 @@
 }
 
 .content{
-    padding: .5% 0;
+    padding: 2% 0;
     margin-bottom: 4%;
 }
 .un-content{
@@ -89,7 +89,22 @@ width: 100%;
     font-weight: bold;
 }
 
-
+.list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.list button{
+    font-size: 18px;
+    color: #ebebeb;
+    background-color: #006c41;
+    transition: .5s ease-in;
+    text-transform:inherit ;
+}
+.list button:hover{
+    color: white;
+    background-color: #003d25;
+}
 
 
 
@@ -115,13 +130,21 @@ width: 100%;
         gap: 1px;
         color: white;
     }
+    .list{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .list buton{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width:575px){
     video{
         margin-top: 3%;
     }
     .content{
-        padding: .5% 0;
+        padding-bottom: 5%;
         margin-bottom: 6%;
     }
 }
