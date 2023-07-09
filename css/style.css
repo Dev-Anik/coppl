@@ -153,7 +153,12 @@ width: 100%;
     color: white;
     background-color: #003d25;
 }
-
+.red{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Belanosima', sans-serif;
+    color: red;
+}
 
 
 @media screen and (max-width:767px){
