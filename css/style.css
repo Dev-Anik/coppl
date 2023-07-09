@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+.navbar-brand{
+    font-family: 'Caprasimo', cursive;
+    text-transform: uppercase;
+    gap: .5rem;
+}
+.hero{
+    margin-top: -4rem;
+    height: 600px;
+}
+video{
+    width: 100%;
+    margin-top: -10%;
+}
 .navbar{
     background-color: #082449 !important;
 }
@@ -15,7 +29,7 @@
     color: white !important;
 }
 .brand{
-    max-width: 60px;
+    max-width: 50px;
 }
 @media screen and (max-width:767px){
     .brand{
