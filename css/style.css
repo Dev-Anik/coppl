@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Caprasimo&display=swap');
+.heading{
+    margin: 2rem 0;
+    text-align: center;
+    font-size: clamp(1.5625rem, 1.3463rem + 0.9609vw, 2.5rem);
+    color: #575757;
+    font-family: 'Belanosima', sans-serif;
+}
 .navbar-brand{
     font-family: 'Caprasimo', cursive;
     text-transform: uppercase;
@@ -6,7 +13,6 @@
 }
 .hero{
     margin-top: -4rem;
-    height: 600px;
 }
 video{
     width: 100%;
@@ -31,6 +37,51 @@ video{
 .brand{
     max-width: 50px;
 }
+
+/* countdown css */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.time {
+    display: grid;
+    gap: 5px;
+    color: white;
+}
+.t-head{
+    margin-bottom: 2%;
+    background: rgb(248 118 58);
+    padding: 13px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.t-nmbr{
+    background: #13777c;
+    padding: 13px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.time h5 {
+    font-size: clamp(1.125rem, 1.0241rem + 0.4484vw, 1.5625rem);
+    margin: 2px;
+    font-weight: bold;
+}
+.time h2{
+    font-size: clamp(1.5625rem, 1.4184rem + 0.6406vw, 2.1875rem);
+    margin: 2px;
+    font-weight: bold;
+}
+
+
+
+
+
 @media screen and (max-width:767px){
     .brand{
         max-width: 55px;
@@ -38,8 +89,23 @@ video{
     video{
         margin-top: 2%;
     }
+    .heading{
+        margin: 1rem 0;
+    }
+    .countdown-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0 4%;
+    }
+    .time {
+        display: grid;
+        gap: 1px;
+        color: white;
+    }
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:575px){
     video{
         margin-top: 3%;
     }
