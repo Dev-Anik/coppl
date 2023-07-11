@@ -21,13 +21,13 @@
             newDiv +=`<div class="link-btn">`;
         }
        else if(index==2){
-                newDiv +=`<a href="${value}" class="btn btn-primary">Match Fixture</a>`;
+                newDiv +=`<a href="${value}" class="btn btn-primary" target="_blank">Match Fixture</a>`;
         }
         else if(index==3){
-                newDiv +=`<a href="${value}" class="btn btn-primary">Stats</a>`;
+                newDiv +=`<a href="${value}" class="btn btn-primary" target="_blank">Stats</a>`;
         }
        else if(index==4){
-                newDiv +=`<a href="${value}" class="btn btn-primary">Point Table</a>`;
+                newDiv +=`<a href="${value}" class="btn btn-primary" target="_blank">Point Table</a>`;
                 newDiv +="</div>";
         }
  
