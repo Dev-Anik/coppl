@@ -24,7 +24,7 @@
                 newDiv +=`<a href="${value}" class="btn btn-primary">Match Fixture</a>`;
         }
         else if(index==3){
-                newDiv +=`<a href="${value}" class="btn btn-primary">Match Scores</a>`;
+                newDiv +=`<a href="${value}" class="btn btn-primary">Stats</a>`;
         }
        else if(index==4){
                 newDiv +=`<a href="${value}" class="btn btn-primary">Point Table</a>`;
