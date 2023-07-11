@@ -42,7 +42,7 @@
 
       function loadData() {
         // Spreadsheet ID
-        const spreadsheetId = "1Uao0UI2MVzqzW3m4qJjNPKccBGA9WkQlmuh78YV9jwE";
+        const spreadsheetId = "1srNGi30VyczfQeBxJC_L5qF1WVENu104f-063eJL9Xo";
         const sheetName = "Tournaments"; // Replace with the actual sheet tab name
         const range = `${sheetName}!A2:Z`;
         getPublicValues({ spreadsheetId, range }, displayResult2);
