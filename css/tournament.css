@@ -1,0 +1,39 @@
+.card{
+    background-color: #364f7b;
+}
+.card-header {
+    background-color: #223e6ee8;
+    color: white;
+}
+.card-img{
+    padding: 5%;
+}
+.card-body {
+    background: aliceblue;
+}
+.card-header{
+    font-family: 'Freehand', cursive;
+    font-size: 30px;
+}
+.card-body h5{
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    word-spacing: 6px;
+    color: #1f3271;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:575px){
+    .row{
+        gap: 30px;
+    }
+    .col-sm-4 {
+        padding: 0 5%;
+    }
+    .card-img {
+        width: 250px;
+    }
+    .card-body{
+        padding:1rem;
+    }
+}

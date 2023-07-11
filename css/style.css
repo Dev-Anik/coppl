@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Caprasimo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Belanosima:wght@400;600;700&family=Caprasimo&family=Freehand&display=swap');
+body{
+    position: relative;
+    padding-bottom: 5%;
+    min-height: 100vh;
+}
 /* loader css */
 .loader{
     position: fixed;
@@ -42,6 +46,26 @@
 
 
 
+/* marquee part */
+.marq-wrapper{
+    overflow: hidden;
+}
+.marquee-text {
+    width: max-content;
+    animation: marqanimation 18s linear 0s infinite running;
+}
+section.notice {
+    margin: 0 5%;
+}
+
+@keyframes marqanimation{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
 
 
 
@@ -160,7 +184,21 @@ width: 100%;
     color: red;
 }
 
-
+.link-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card-img{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
 @media screen and (max-width:767px){
     .brand{
         max-width: 55px;
@@ -190,6 +228,23 @@ width: 100%;
     }
     .list buton{
         font-size: 15px;
+    }
+    .navbar-nav .nav-link {
+        text-align: center;
+        background: white;
+        margin: 4px 0;
+        color: black !important;
+        font-weight: bold;
+        padding: 1% 0;
+        width: 60%;
+        margin-left: auto !important;
+        border-radius: 6px;
+        font-size: 15px;
+        margin-right: auto !important;
+    }
+    .navbar-nav .nav-link:hover{
+     background: rgb(209, 209, 209);
+     color: black !important;
     }
 }
 @media screen and (max-width:575px){
