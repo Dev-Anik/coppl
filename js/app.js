@@ -60,11 +60,12 @@ window.open("../player-details.html");
       // Your API KEY
       const API_KEY = "AIzaSyBb98SIULHZ423gnWkXzxTs9aCinLj9C80";
       function displayResult2(response) {
+
 let tableHead = "";
 let tableBody = "";
 
 const maxColumns = response.result.values.reduce((max, row) => Math.max(max, row.length), 0);
-
+let count=0;
 response.result.values.forEach((row, index) => {
   if (index === 0) {
     tableHead += "<tr>";
@@ -78,6 +79,13 @@ response.result.values.forEach((row, index) => {
     tableHead += "</tr>";
   } else {
     tableBody += "<tr>";
+    if(index==1){
+      tableBody +="<td>Serial</td>"
+    }
+    else{
+      tableBody +=`<td>${count}</td>`;
+    }
+
     row.forEach((val) => (tableBody += "<td>" + val + "</td>"));
 
     // Add empty td elements for any missing columns
@@ -86,6 +94,7 @@ response.result.values.forEach((row, index) => {
     }
 
     tableBody += "</tr>";
+    count++;
   }
 });
 
