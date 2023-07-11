@@ -60,7 +60,7 @@ section.notice {
 
 @keyframes marqanimation{
     0%{
-        transform: translateX(100%);
+        transform: translateX(80%);
     }
     100%{
         transform: translateX(-100%);
