@@ -1,7 +1,19 @@
 th,td{
     white-space: nowrap;
 }
-th:nth-child(1){
+.rewards-tbl th{
+    vertical-align: bottom;
+    background: #163b5b;
+    font-size: 16px;
+    color: white;
+}
+.rewards-tbl tr td{
+    text-align: center;
+}
+.rewards-tbl tr td:nth-child(1){
+    text-align: left;
+}
+.player-details th:nth-child(1){
     color: white;
     background: #51bd9a;
     text-align: center;
@@ -9,7 +21,7 @@ th:nth-child(1){
     font-weight: bold;
     border-radius: 5px;
 }
-tbody tr:nth-child(1){
+.player-details tbody tr:nth-child(1){
     background: #163b5b;
     color: white;
     font-weight: bold;

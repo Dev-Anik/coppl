@@ -29,7 +29,6 @@
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tbl.css">
-    <link rel="stylesheet" href="css/tournament.css">
     <!-- Custom styles -->
 
     
@@ -76,15 +75,14 @@
     <!--Main layout-->
     <main>
       <div class="container">
-        <h3 class="heading">Tournament Details</h3>
-        <!-- tournament section -->
-        <section>
-         <div class="row tournament">
-
-         </div>
-        </section>
-        <!-- tournament section -->
-       
+        <!-- Table -->
+        <div class="tbl-container">
+        <table class="table rewards-tbl">
+          <thead id="table-head"></thead>
+          <tbody id="table-body"></tbody>
+        </table>
+        <!-- Table -->
+      </div>
       </div>
     </main>
     <!--Main layout-->
@@ -118,5 +116,5 @@
   <script type="text/javascript" src="js/easyData-google-sheets.js"></script>
 
   <!-- easyData - Creating table -->
-  <script src="js/tournament.js"></script>
+  <script src="js/reward.js"></script>
 </html>
