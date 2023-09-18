@@ -29,7 +29,7 @@ window.open("../player-details.html");
 window.open("../player-details.html");
     }
     else if(e==8){
-      sessionStorage.setItem("sheetTab", "M. Anik");
+      sessionStorage.setItem("sheetTab", "Samiur Rahman");
 window.open("../player-details.html");
     }
     else if(e==9){
